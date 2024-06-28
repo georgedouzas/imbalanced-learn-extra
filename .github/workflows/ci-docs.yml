@@ -28,7 +28,7 @@ jobs:
         python-version: |
             3.10
             3.11
-            
+            3.12
 
     - name: Set up PDM
       uses: pdm-project/setup-pdm@v3
@@ -68,11 +68,7 @@ jobs:
         python-version: |
             3.10
             3.11
-    
-    - name: Install conda
-      uses: s-weigand/setup-conda@v1
-      with:
-          activate-conda: false
+            3.12
 
     - name: Set up PDM
       uses: pdm-project/setup-pdm@v3
@@ -92,7 +88,7 @@ jobs:
 
     strategy:
       matrix:
-          python-version: ['3.10', '3.11']
+          python-version: ['3.10', '3.11', '3.12']
 
     steps:
     - name: Checkout

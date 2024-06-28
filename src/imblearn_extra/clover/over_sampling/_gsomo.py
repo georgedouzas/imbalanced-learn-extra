@@ -9,12 +9,12 @@ from collections.abc import Callable
 from math import sqrt
 
 import numpy as np
-from gsmote import GeometricSMOTE
 from sklearn.base import clone
 from sklearn.neighbors import NearestNeighbors
 from sklearn.utils import check_scalar
 from typing_extensions import Self
 
+from ...gsmote import GeometricSMOTE
 from .. import InputData, Targets
 from ..clusterer import SOM
 from ..distribution import DensityDistributor

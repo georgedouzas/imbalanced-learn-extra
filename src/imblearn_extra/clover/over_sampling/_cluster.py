@@ -241,6 +241,7 @@ def generate_in_cluster(
     class_label = next(iter(cluster_sampling_strategy.keys()))
     oversampler = clone_modify(oversampler, class_label, y_in_cluster)
     oversampler.sampling_strategy_ = cluster_sampling_strategy
+    oversampler.n_features_in_ = X_in_cluster.shape[1]
 
     # Resample cluster and class data
     X_res, y_res = oversampler._fit_resample(

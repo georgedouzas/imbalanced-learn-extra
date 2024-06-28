@@ -1,3 +1,3 @@
 # General examples
 
-A collection of examples for clover package.
+A collection of examples for the `imblearn_extra` package.

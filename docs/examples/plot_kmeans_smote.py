@@ -11,9 +11,9 @@ process and the performance of KMeans-SMOTE.
 
 import matplotlib.pyplot as plt
 import pandas as pd
-from clover.over_sampling import KMeansSMOTE
 from imblearn.over_sampling import SMOTE
 from imblearn.pipeline import make_pipeline
+from imblearn_extra.clover.over_sampling import KMeansSMOTE
 from sklearn.base import clone
 from sklearn.datasets import make_classification
 from sklearn.ensemble import GradientBoostingClassifier

@@ -1,10 +1,10 @@
-site_name: "cluster-over-sampling"
+site_name: "imbalanced-learn-extra"
 site_description: "A general interface for clustering based over-sampling algorithms."
-site_url: "https://georgedouzas.github.io/cluster-over-sampling"
-repo_url: "https://github.com/georgedouzas/cluster-over-sampling"
-repo_name: "georgedouzas/cluster-over-sampling"
+site_url: "https://georgedouzas.github.io/imbalanced-learn-extra"
+repo_url: "https://github.com/georgedouzas/imbalanced-learn-extra"
+repo_name: "georgedouzas/imbalanced-learn-extra"
 site_dir: "site"
-watch: [README.md, CONTRIBUTING.md, CHANGELOG.md, src/clover]
+watch: [README.md, CONTRIBUTING.md, CHANGELOG.md, src/imblearn_extra]
 
 theme:
   name: material

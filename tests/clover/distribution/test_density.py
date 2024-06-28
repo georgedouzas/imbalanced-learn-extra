@@ -1,8 +1,8 @@
-"""Test the density module."""
+"""Test the _density module."""
 
 import numpy as np
 import pytest
-from clover.distribution._density import DensityDistributor
+from imblearn_extra.clover.distribution._density import DensityDistributor
 from sklearn.base import clone
 
 X = np.array(

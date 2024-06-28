@@ -1,11 +1,12 @@
-"""Test the cluster module."""
+"""Test the _cluster module."""
 
 from collections import Counter, OrderedDict
 
 import numpy as np
 import pytest
-from clover.distribution import DensityDistributor
-from clover.over_sampling import (
+from imblearn.over_sampling import SMOTE, SVMSMOTE, BorderlineSMOTE, RandomOverSampler
+from imblearn_extra.clover.distribution import DensityDistributor
+from imblearn_extra.clover.over_sampling import (
     ClusterOverSampler,
     clone_modify,
     extract_inter_data,
@@ -13,7 +14,6 @@ from clover.over_sampling import (
     generate_in_cluster,
     modify_nn,
 )
-from imblearn.over_sampling import SMOTE, SVMSMOTE, BorderlineSMOTE, RandomOverSampler
 from sklearn.base import clone
 from sklearn.cluster import KMeans
 from sklearn.datasets import make_classification

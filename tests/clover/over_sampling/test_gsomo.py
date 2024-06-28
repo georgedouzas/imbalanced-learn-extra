@@ -4,14 +4,13 @@ from collections import Counter, OrderedDict
 from math import sqrt
 
 import pytest
-from clover.distribution import DensityDistributor
-from gsmote import GeometricSMOTE
+from imblearn_extra.clover.clusterer import SOM
+from imblearn_extra.clover.distribution import DensityDistributor
+from imblearn_extra.clover.over_sampling import GeometricSOMO
+from imblearn_extra.gsmote import GeometricSMOTE
 from sklearn.base import clone
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.datasets import make_classification
-
-GeometricSOMO = pytest.importorskip('clover.over_sampling').GeometricSOMO
-SOM = pytest.importorskip('clover.clusterer').SOM
 
 RANDOM_STATE = 11
 X, y = make_classification(

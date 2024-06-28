@@ -3,12 +3,12 @@ requires = ["pdm-pep517"]
 build-backend = "pdm.pep517.api"
 
 [project]
-name = "cluster-over-sampling"
-description = "A general interface for clustering based over-sampling algorithms."
+name = "imbalanced-learn-extra"
+description = "An implementation of novel oversampling algorithms."
 authors = [{name = "Georgios Douzas", email = "gdouzas@icloud.com"}]
 license = "MIT"
 readme = "README.md"
-requires-python = ">=3.10, <3.12"
+requires-python = ">=3.10, <3.13"
 keywords = ["machine learning", "imbalanced learning", "oversampling"]
 dynamic = ["version"]
 classifiers = [
@@ -19,6 +19,7 @@ classifiers = [
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Topic :: Documentation",
     "Topic :: Software Development",
     "Topic :: Utilities",
@@ -27,23 +28,20 @@ classifiers = [
 dependencies = [
     "scipy>=1.7.2",
     "numpy>=1.22",
-    "scikit-learn>=1.1.1",
-    "imbalanced-learn>=0.9.0",
-    "geometric-smote>=0.2.0",
+    "scikit-learn>=1.3.2",
+    "imbalanced-learn>=0.11.0",
+    "MiniSom>=2.3.2",
     "typing-extensions>=4.8.0",
 ]
 
-[project.optional-dependencies]
-som = ["somoclu>=1.7.6"]
-
 [project.urls]
-Homepage = "https://georgedouzas.github.io/cluster-over-sampling"
-Documentation = "https://georgedouzas.github.io/cluster-over-sampling"
-Changelog = "https://georgedouzas.github.io/cluster-over-sampling/changelog"
-Repository = "https://github.com/georgedouzas/cluster-over-sampling"
-Issues = "https://github.com/georgedouzas/cluster-over-sampling/issues"
-Discussions = "https://github.com/georgedouzas/cluster-over-sampling/discussions"
-Gitter = "https://gitter.im/cluster-over-sampling/community"
+Homepage = "https://georgedouzas.github.io/imbalanced-learn-extra"
+Documentation = "https://georgedouzas.github.io/imbalanced-learn-extra"
+Changelog = "https://georgedouzas.github.io/imbalanced-learn-extra/changelog"
+Repository = "https://github.com/georgedouzas/imbalanced-learn-extra"
+Issues = "https://github.com/georgedouzas/imbalanced-learn-extra/issues"
+Discussions = "https://github.com/georgedouzas/imbalanced-learn-extra/discussions"
+Gitter = "https://gitter.im/imbalanced-learn-extra/community"
 Funding = "https://github.com/sponsors/georgedouzas"
 
 [tool.pdm]

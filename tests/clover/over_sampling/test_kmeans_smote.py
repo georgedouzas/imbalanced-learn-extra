@@ -3,9 +3,9 @@
 from collections import Counter, OrderedDict
 
 import pytest
-from clover.distribution import DensityDistributor
-from clover.over_sampling import KMeansSMOTE
 from imblearn.over_sampling import SMOTE
+from imblearn_extra.clover.distribution import DensityDistributor
+from imblearn_extra.clover.over_sampling import KMeansSMOTE
 from sklearn.base import clone
 from sklearn.cluster import AgglomerativeClustering, KMeans, MiniBatchKMeans
 from sklearn.datasets import make_classification

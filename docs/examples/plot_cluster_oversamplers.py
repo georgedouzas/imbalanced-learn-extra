@@ -13,9 +13,9 @@ is used.
 
 import matplotlib.pyplot as plt
 import pandas as pd
-from clover.over_sampling import ClusterOverSampler
 from imblearn.over_sampling import SMOTE, BorderlineSMOTE, RandomOverSampler
 from imblearn.pipeline import make_pipeline
+from imblearn_extra.clover.over_sampling import ClusterOverSampler
 from sklearn.base import clone
 from sklearn.cluster import AgglomerativeClustering, KMeans
 from sklearn.datasets import make_classification

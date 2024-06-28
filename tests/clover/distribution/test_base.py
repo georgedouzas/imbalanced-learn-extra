@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from clover.distribution.base import BaseDistributor
+from imblearn_extra.clover.distribution.base import BaseDistributor
 from sklearn.datasets import make_classification
 
 

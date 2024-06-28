@@ -10,7 +10,7 @@ import nox
 
 os.environ.update({'PDM_IGNORE_SAVED_PYTHON': '1'})
 
-PYTHON_VERSIONS: list[str] = ['3.10', '3.11']
+PYTHON_VERSIONS: list[str] = ['3.10', '3.11', '3.12']
 FILES: list[str] = ['src', 'tests', 'docs', 'noxfile.py']
 CHANGELOG_ARGS: dict[str, Any] = {
     'repository': '.',
@@ -102,14 +102,13 @@ def checks(session: nox.Session, file: str) -> None:
         session.run('safety', 'check', '-r', requirements_path)
 
 
-@nox.session(python=PYTHON_VERSIONS, venv_backend='conda')
+@nox.session(python=PYTHON_VERSIONS)
 def tests(session: nox.Session) -> None:
     """Run tests and coverage.
 
     Arguments:
         session: The nox session.
     """
-    session.run('conda', 'install', '-y', '-c', 'conda-forge', 'somoclu')
     session.run('pdm', 'install', '-dG', 'tests', external=True)
     env = {'COVERAGE_FILE': f'.coverage.{session.python}'}
     if session.posargs:

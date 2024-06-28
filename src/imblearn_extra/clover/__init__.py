@@ -7,14 +7,17 @@
 The module provides the implementation of an interface for clustering-based over-sampling. It
 has two submodules:
 
-- [`distribution`][imblearn_extra.clover.distribution]: Provides the classes to distrubute the generated samples into clusters.
+- [`distribution`][imblearn_extra.clover.distribution]: Provides the classes to distrubute the generated samples into
+clusters.
 
     - [`DensityDistributor`][imblearn_extra.clover.distribution.DensityDistributor]: Density based distributor.
 
 - [`over_sampling`][imblearn_extra.clover.over_sampling]: Provides the clustering-based oversampling algorithms.
 
-    - [`ClusterOverSampler`][imblearn_extra.clover.over_sampling.ClusterOverSampler]: Combinations of oversampler and clusterer.
-    - [`KMeansSMOTE`][imblearn_extra.clover.over_sampling.KMeansSMOTE]: [KMeans-SMOTE oversampling algorithm] oversampling algorithm.
+    - [`ClusterOverSampler`][imblearn_extra.clover.over_sampling.ClusterOverSampler]: Combinations of oversampler and
+    clusterer.
+    - [`KMeansSMOTE`][imblearn_extra.clover.over_sampling.KMeansSMOTE]: [KMeans-SMOTE oversampling algorithm]
+    oversampling algorithm.
     - [`SOMO`][imblearn_extra.clover.over_sampling.SOMO]: [SOMO oversampling algorithm].
     - [`GeometricSOMO`][imblearn_extra.clover.over_sampling.GeometricSOMO]: [G-SOMO oversampling algorithm].
 """

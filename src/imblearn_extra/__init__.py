@@ -1,11 +1,5 @@
-"""A Python package that implements novel oversampling algorithms.
+"""Novel oversampling algorithms implementations."""
 
-The package `imbalanced-learn-extra` is a Python package that extends [imbalanced-learn](http://imbalanced-learn.org/stable/). It
-implements algorithms that are not included in [imbalanced-learn](http://imbalanced-learn.org/stable/) due to their novelty or
-lower citation number. The current version includes the following:
+from __future__ import annotations
 
-- A general interface for clustering-based oversampling algorithms.
-
-- The Geometric SMOTE algorithm. It is a geometrically enhanced drop-in replacement for SMOTE, that handles numerical
-as well as categorical features.
-"""
+__all__: list[str] = []

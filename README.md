@@ -55,7 +55,7 @@ install it via `pip`:
 pip install imbalanced-learn-extra
 ```
 
-Development installation requires to clone the repository and then use [PDM](https://github.com/pdm-project/pdm) to install the
+Development installation requires cloning the repository and then using [PDM](https://github.com/pdm-project/pdm) to install the
 project as well as the main and development dependencies:
 
 ```bash

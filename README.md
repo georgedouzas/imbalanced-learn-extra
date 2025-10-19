@@ -116,3 +116,18 @@ Publications using Geometric-SMOTE:
   Learning in Land Cover Classification: Improving Minority Classes’
   Prediction Accuracy Using the Geometric SMOTE Algorithm. Remote Sensing,
   11(24), 3040. <https://doi.org/10.3390/rs11243040>
+
+## User Support
+
+If you encounter a bug, have a question, or would like to request a new feature, you can get support through the project’s GitHub
+issue tracker.
+
+- **Report a bug:** Open a [new issue](https://github.com/georgedouzas/imbalanced-learn-extra/issues/new)
+  and describe the problem, including steps to reproduce it and your environment details.
+- **Request a feature:** Open a [new issue](https://github.com/georgedouzas/imbalanced-learn-extra/issues/new)
+  describing the functionality you’d like to see added.
+- **Ask a question or request help:** Use the [Q&A discussion board](https://github.com/georgedouzas/imbalanced-learn-extra/discussions)
+  for general usage questions or clarifications.
+
+Before opening a new issue, please check the [existing issues](https://github.com/georgedouzas/imbalanced-learn-extra/issues)
+to see if your question or problem has already been addressed.

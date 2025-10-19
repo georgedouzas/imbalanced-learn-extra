@@ -10,7 +10,7 @@ copyright_license: MIT License
 project_description: An implementation of novel oversampling algorithms.
 python_package_distribution_name: imbalanced-learn-extra
 python_package_import_name: imblearn_extra
-python_versions: '>=3.10, <3.13'
+python_versions: '>=3.10, <3.14'
 repository_name: imbalanced-learn-extra
 repository_namespace: georgedouzas
 

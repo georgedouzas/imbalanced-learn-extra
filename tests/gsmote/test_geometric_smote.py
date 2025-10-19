@@ -292,7 +292,7 @@ def test_wrong_target_type():
     gsmote = GeometricSMOTE(categorical_features=categorical_features, random_state=RANDOM_STATE)
     with pytest.raises(ValueError, match='Unknown label type: continuous'):
         gsmote.fit_resample(X, y=np.linspace(0, 1, 30))
-    with pytest.raises(ValueError, match='Multilabel and multioutput targets are not supported.'):
+    with pytest.raises(ValueError, match=r'Multilabel and multioutput targets are not supported.'):
         gsmote.fit_resample(X, RANDOM_STATE.randint(2, size=(20, 3)))
 
 

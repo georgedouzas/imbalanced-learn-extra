@@ -158,7 +158,7 @@ def test_fit_resample():
     """
     # Fit oversampler
     kmeans_smote = clone(KMEANS_SMOTE_OVERSAMPLER)
-    _, y_res = kmeans_smote.fit_resample(X, y)
+    kmeans_smote.fit_resample(X, y)
 
     # Assert clusterer is fitted
     assert hasattr(kmeans_smote.clusterer_, 'labels_')

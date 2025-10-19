@@ -170,7 +170,7 @@ def test_fit_resample():
     """
     # Fit oversampler
     gsomo = clone(GSOMO_OVERSAMPLER)
-    _, y_res = gsomo.fit_resample(X, y)
+    gsomo.fit_resample(X, y)
 
     # Assert clusterer is fitted
     assert hasattr(gsomo.clusterer_, 'labels_')

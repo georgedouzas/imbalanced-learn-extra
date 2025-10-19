@@ -135,7 +135,7 @@ def extract_intra_data(
     for (cluster_label, class_label), proportion in intra_distribution.items():
         mask = (cluster_labels == cluster_label) & (np.isin(y, [majority_class_label, class_label]))
         offset = int((cluster_label, class_label) in selected_multi_labels)
-        n_minority_samples = int(round(sampling_strategy[class_label] * proportion)) + offset
+        n_minority_samples = round(sampling_strategy[class_label] * proportion) + offset
         X_in_cluster, y_in_cluster = X[mask], y[mask]
         cluster_sampling_strategy = {class_label: n_minority_samples}
         if n_minority_samples > 0:
@@ -183,7 +183,7 @@ def extract_inter_data(
             (y1 == majority_class_label),
             (y2 == majority_class_label),
         )
-        n_minority_samples = int(round(sampling_strategy[class_label1] * proportion))
+        n_minority_samples = round(sampling_strategy[class_label1] * proportion)
         for _ in range(n_minority_samples):
             ind1, ind2 = (
                 random_state.randint(0, (~majority_mask1).sum()),

@@ -164,7 +164,7 @@ def test_fit_resample():
     """
     # Fit oversampler
     somo = clone(SOMO_OVERSAMPLER)
-    _, y_res = somo.fit_resample(X, y)
+    somo.fit_resample(X, y)
 
     # Assert clusterer is fitted
     assert hasattr(somo.clusterer_, 'labels_')

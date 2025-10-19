@@ -268,7 +268,7 @@ def test_raise_error_fit_resample(oversampler):
     )
     with pytest.raises(
         ValueError,
-        match='No samples were generated. Try to modify the parameters of the clusterer or distributor.',
+        match=r'No samples were generated. Try to modify the parameters of the clusterer or distributor.',
     ):
         oversampler.fit_resample(X, y)
 

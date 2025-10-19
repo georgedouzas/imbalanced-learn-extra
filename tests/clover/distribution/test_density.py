@@ -141,11 +141,11 @@ def test_raise_error_filtering_threshold():
 
     Value and type error cases.
     """
-    with pytest.raises(ValueError, match='filtering_threshold == -1.0, must be >= 0.0'):
+    with pytest.raises(ValueError, match=r'filtering_threshold == -1.0, must be >= 0.0'):
         clone(DISTRIBUTOR).set_params(filtering_threshold=-1.0).fit(X, y_bin, LABELS)
-    with pytest.raises(TypeError, match='filtering_threshold must be an instance of {int, float}, not NoneType'):
+    with pytest.raises(TypeError, match=r'filtering_threshold must be an instance of {int, float}, not NoneType'):
         clone(DISTRIBUTOR).set_params(filtering_threshold=None).fit(X, y_bin, LABELS)
-    with pytest.raises(TypeError, match='filtering_threshold must be an instance of {int, float}, not str'):
+    with pytest.raises(TypeError, match=r'filtering_threshold must be an instance of {int, float}, not str'):
         clone(DISTRIBUTOR).set_params(filtering_threshold='value').fit(X, y_bin, LABELS)
 
 
@@ -154,11 +154,11 @@ def test_raise_error_distances_exponent():
 
     Value and type error cases.
     """
-    with pytest.raises(ValueError, match='distances_exponent == -1.0, must be >= 0.0'):
+    with pytest.raises(ValueError, match=r'distances_exponent == -1.0, must be >= 0.0'):
         clone(DISTRIBUTOR).set_params(distances_exponent=-1.0).fit(X, y_bin, LABELS)
-    with pytest.raises(TypeError, match='distances_exponent must be an instance of {int, float}, not None'):
+    with pytest.raises(TypeError, match=r'distances_exponent must be an instance of {int, float}, not None'):
         clone(DISTRIBUTOR).set_params(distances_exponent=None).fit(X, y_bin, LABELS)
-    with pytest.raises(TypeError, match='distances_exponent must be an instance of {int, float}, not str'):
+    with pytest.raises(TypeError, match=r'distances_exponent must be an instance of {int, float}, not str'):
         clone(DISTRIBUTOR).set_params(distances_exponent='value').fit(X, y_bin, LABELS)
 
 
@@ -176,11 +176,11 @@ def test_raise_error_distribution_ratio():
 
     Type error case.
     """
-    with pytest.raises(ValueError, match='distribution_ratio == -1.0, must be >= 0.0'):
+    with pytest.raises(ValueError, match=r'distribution_ratio == -1.0, must be >= 0.0'):
         clone(DISTRIBUTOR).set_params(distribution_ratio=-1.0).fit(X, y_bin, LABELS)
-    with pytest.raises(ValueError, match='distribution_ratio == 2.0, must be <= 1.0'):
+    with pytest.raises(ValueError, match=r'distribution_ratio == 2.0, must be <= 1.0'):
         clone(DISTRIBUTOR).set_params(distribution_ratio=2.0).fit(X, y_bin, LABELS)
-    with pytest.raises(TypeError, match='distribution_ratio must be an instance of float, not str'):
+    with pytest.raises(TypeError, match=r'distribution_ratio must be an instance of float, not str'):
         clone(DISTRIBUTOR).set_params(distribution_ratio='value').fit(X, y_bin, LABELS)
 
 
@@ -191,7 +191,7 @@ def test_raise_error_no_neighbors_distribution_ratio():
     """
     with pytest.raises(
         ValueError,
-        match=('Parameter `distribution_ratio` should be equal to 1.0, when `neighbors` parameter is `None`.'),
+        match=(r'Parameter `distribution_ratio` should be equal to 1.0, when `neighbors` parameter is `None`.'),
     ):
         clone(DISTRIBUTOR).set_params(distribution_ratio=0.5).fit(X, y_bin, LABELS, neighbors=None)
 

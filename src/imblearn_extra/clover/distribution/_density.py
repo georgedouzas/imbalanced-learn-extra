@@ -282,7 +282,7 @@ class DensityDistributor(BaseDistributor):
 
         # Calculate normalization factors
         class_labels = {class_label for _, class_label in self.filtered_clusters_}
-        normalization_factors = {class_label: 0.0 for class_label in class_labels}
+        normalization_factors = dict.fromkeys(class_labels, 0.0)
         for (_, class_label), weight in weights.items():
             normalization_factors[class_label] += weight
 
@@ -328,7 +328,7 @@ class DensityDistributor(BaseDistributor):
         }
 
         # Calculate normalization factors
-        normalization_factors = {class_label: 0.0 for class_label in class_labels}
+        normalization_factors = dict.fromkeys(class_labels, 0.0)
         for multi_labels, weight in weights.items():
             normalization_factors[multi_labels[0][1]] += weight
 

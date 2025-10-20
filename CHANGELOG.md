@@ -6,13 +6,28 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.2.10](https://github.com/georgedouzas/imbalanced-learn-extra/releases/tag/0.2.10) - 2025-10-20
+
+<small>[Compare with 0.2.9](https://github.com/georgedouzas/imbalanced-learn-extra/compare/0.2.9...0.2.10)</small>
+
+### Docs
+
+- Add user support section ([1283045](https://github.com/georgedouzas/imbalanced-learn-extra/commit/1283045bc6b7ba573bdcdb1ae5159d27990e8fd3) by georgedouzas).
+- Change licence type ([7bd85f4](https://github.com/georgedouzas/imbalanced-learn-extra/commit/7bd85f40479fd2d4b3bce00af99c8239d96d612c) by georgedouzas).
+
+### Chore
+
+- Fix check warnings ([cfefd22](https://github.com/georgedouzas/imbalanced-learn-extra/commit/cfefd223cc6c2dff90e8d9d8fb6e5a34e1079930) by georgedouzas).
+- Support Python 3.13 ([7716089](https://github.com/georgedouzas/imbalanced-learn-extra/commit/7716089e48a91e533f8968377184a43cf5489999) by georgedouzas).
+
 ## [0.2.9](https://github.com/georgedouzas/imbalanced-learn-extra/releases/tag/0.2.9) - 2025-02-05
 
 <small>[Compare with 0.2.8](https://github.com/georgedouzas/imbalanced-learn-extra/compare/0.2.8...0.2.9)</small>
 
 ### Chore
 
-- Update GitHub docs actions ([6ece306](https://github.com/georgedouzas/imbalanced-learn-extra/commit/6ece306a1f5f8eed377554c16d6584f158d1b650) by georgedouzas).
+- Release 0.2.9 ([e6c2b0c](https://github.com/georgedouzas/imbalanced-learn-extra/commit/e6c2b0c396a5408b3b49db2780ba7bc52e80d867) by georgedouzas).
+- Update GitHub docs actions ([b22102f](https://github.com/georgedouzas/imbalanced-learn-extra/commit/b22102fd44a5c310e7cd911d7845a2cadd0b88b0) by georgedouzas).
 
 ## [0.2.8](https://github.com/georgedouzas/imbalanced-learn-extra/releases/tag/0.2.8) - 2025-02-05
 
